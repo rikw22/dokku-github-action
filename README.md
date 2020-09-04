@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Dokku deploy
-      uses: rikw22/dokku-github-action@v6.1
+      uses: rikw22/dokku-github-action@v6.2
       env:
         PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         HOST: casply.com
