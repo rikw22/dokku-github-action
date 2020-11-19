@@ -14,7 +14,7 @@ name: CD
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Dokku deploy
       uses: rikw22/dokku-github-action@v6.2
       env:
